@@ -8,14 +8,16 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Time is your friends;impulse is your enemy. - Start Bootstrap Template</title>
+  <% content_for :title do %>
+INDEXFunds
+<% end %>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto Sans JP:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/one-page-wonder.min.css" rel="stylesheet">
@@ -27,7 +29,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Browse Securities company</a>
+      <a class="navbar-brand" href="#">community of index investers</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -64,13 +66,13 @@
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2">
           <div class="p-5">
-            <img class="img-fluid rounded-circle" src="img/01.jpg" alt="">
+            <img class="img-fluid rounded-circle" <%= image_tag 'graph-3201151_1280.png' %>
           </div>
         </div>
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
-            <h2 class="display-4">For those about to rock...</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            <h2 class="display-4">Long term.</h2>
+            <p>インデックス投資は長期運用が前提です。 株価の市場平均値(日経平均、S&P500 and more..)に連動した利益を追及するインデックス投資において、 10年前後で訪れる株価の大暴落(バブル崩壊やリーマンショック)による損益を避けることはできません。 しかし、株価の歴史を見ると、数年程度で元の水準の価格に戻り、さらに数年経てば、過去最高値を記録し続けています。要は、株価が下がったからと言って売るのでなく、持ち続けることで利益を得る事ができるのです。</p>
           </div>
         </div>
       </div>
@@ -82,13 +84,13 @@
       <div class="row align-items-center">
         <div class="col-lg-6">
           <div class="p-5">
-            <img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
+            <img class="img-fluid rounded-circle" <%= image_tag 'sozai_cman_jp_20190428162102.png' %>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="p-5">
-            <h2 class="display-4">We salute you!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            <h2 class="display-4">Reserve.</h2>
+            <p>インデックス投資は定額を定期的に積立続けることが前提です。株価が最安値の時に投資を始め、最高値になったタイミングで株を売ることができれば理想ですが、今の株価が最安値か否かという事は誰にも判断つきません。そこで推奨される投資方法が定額を定期的に積立続ける手法(ドルコスト平均法)です。定額で、かつ定期的に株を購入することで、高値の時は少ない量、安値の時は多くの量を購入する事となり、トータルで購入価格を低く抑える事ができます。要は、高値の時に株の購入を控え、安値の時に多くの株を購入します。これを長期運用と組み合わせることで、複利効果も期待でき、高確率で資産を増やす事ができます。</p>
           </div>
         </div>
       </div>
@@ -100,13 +102,13 @@
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2">
           <div class="p-5">
-            <img class="img-fluid rounded-circle" src="img/03.jpg" alt="">
+            <img class="img-fluid rounded-circle" <%= image_tag 'sozai_cman_jp_20190428162858.png' %>
           </div>
         </div>
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
-            <h2 class="display-4">Let there be rock!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            <h2 class="display-4">Asset allocation.</h2>
+            <p>インデックス投資は分散投資が前提です。どの企業が今後成長し、また、どの国が今後発展していくかという事を予測し、的中させることは至難の業です。そこで推奨されるのが、分散投資です。様々な企業や国(世界)に分けて投資をする事で、一部の損益を一部の利益で相殺することが可能です。この分散投資を長期運用、定額の積立と組み合わせれば、投資で失敗する確率は圧倒的に減少します。むしろ、資産を倍近く増やすことが可能です。最後に、インデックス投資の簡単な始め方は投資信託の購入です。具体的な投資信託商品は画面上部のLEARN MOREボタンを押した先の画面で紹介しています。</p>
           </div>
         </div>
       </div>
