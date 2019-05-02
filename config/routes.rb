@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 root  'starters#index'   
   get 'starters' => 'starters#index'
   get 'introductions' => 'introductions#index'
+  post '/login' => 'starters#login' # ログイン画面
 end
