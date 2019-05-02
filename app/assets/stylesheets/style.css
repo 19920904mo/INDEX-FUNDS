@@ -1,0 +1,89 @@
+.header {
+  height: 675vh;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.site-titleInt {
+    display: inline-block;
+    margin: 80px 0 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    border-bottom: double 4px #999;
+}
+
+.site-title {
+    display: inline-block;
+    margin: 30px 0 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    border-bottom: double 4px #999;
+}
+
+.about-text {
+    width: 600px;
+    margin: 10px auto;
+    line-height: 2.5;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.about-stepText {
+    width: 600px;
+    margin: 10px auto;
+    line-height: 2.5;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.about-content {
+    width: 600px;
+    margin: 10px auto;
+    line-height: 2.5;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.about-nisacontent {
+    width: 600px;
+    margin: 10px auto;
+    line-height: 2.5;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.site-appendix {
+    display: inline-block;
+    margin: 30px 0 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    border-bottom: double 4px #999;
+}
+
+.header-resister {
+    text-align: center;
+    margin: 120px 10px 10px 10px;
+}
+
+.header-login {
+    text-align: center;
+    margin: 120px 10px 10px 10px;
+}
+
+.field {
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+
+.actions {
+    text-align: center;
+    margin: 10px 10px 152px 10px;
+}
+
+.actions-login {
+    text-align: center;
+    margin: 10px 10px 118px 10px;
+}
