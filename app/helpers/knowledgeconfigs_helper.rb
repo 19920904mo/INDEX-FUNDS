@@ -1,0 +1,2 @@
+module KnowledgeconfigsHelper
+end

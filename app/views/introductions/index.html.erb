@@ -1,15 +1,21 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8" />
-  <% content_for :title do %>
-INDEX-FUNDS | INTRODUCTION
-<% end %>
+  <head>
+    <%= favicon_link_tag('favicon.ico') %>
+    <title><%= content_for?(:title) ? yield(:title) : "INDEX | INTRODUCTION"%></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
 <link rel="stylesheet" href="normalize.css">  
 <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Noto Sans JP:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-</head>
-  <body>
+
+ 
     <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
@@ -29,6 +35,8 @@ INDEX-FUNDS | INTRODUCTION
       </div>
     </div>
   </nav>
+  </header>
+   <body>
     <header class="header">
       <h1 class="site-titleInt">INTRODUCTION</h1>
       <section class="about" id="about">
@@ -53,7 +61,7 @@ INDEX-FUNDS | INTRODUCTION
       以下に投資を始めるにあたる流れを記載しています。興味を持った方はぜひ読み進めてください。
       </p>
       </section>
-      <h1 class="site-title">First Step</h1>
+      <h1 class="site-title1">First Step</h1>
       <section class="about" id="about">
       <p class="about-stepText">
         銀行口座の開設<br>
@@ -71,7 +79,7 @@ INDEX-FUNDS | INTRODUCTION
       現代において、個人が口座開設をする際、ATM利用時や振込に関わる手数料が基本的に無料、かつオンライン証券とのリンク性からオンライン銀行の選択を強く推奨します。  
       </p>
       </section>
-      <h1 class="site-title">Second Step</h1>
+      <h1 class="site-title2">Second Step</h1>
       <section class="about" id="about">
       <p class="about-stepText">
         特定口座の開設
@@ -91,7 +99,7 @@ INDEX-FUNDS | INTRODUCTION
       オンライン銀行、オンライン証券であれば、自宅からPC、スマホで口座開設が可能です。  
       </p>
       </section>
-      <h1 class="site-title">Final Step</h1>
+      <h1 class="site-title3">Final Step</h1>
       <section class="about" id="about">
       <p class="about-stepText">
         投資信託の買い付け
@@ -117,7 +125,7 @@ INDEX-FUNDS | INTRODUCTION
         手数料が低水準と認めた優良商品です。
       </p>
       </section>
-      <h1 class="site-title">Action</h1>
+      <h1 class="site-title4">Action</h1>
       <section class="about" id="about">
       <p class="about-nisacontent">
         このページでインデックス投資を始めるための最低限の情報は提供しました。<br>
@@ -128,7 +136,7 @@ INDEX-FUNDS | INTRODUCTION
         を上げる事ができます。金融リテラシーが上がれば、人生におけるお金の不安から解消され、自分自身の人生をより楽しめるはずです。
       </p>
       </section>
-      <h1 class="site-title">Important Tips</h1>
+      <h1 class="site-title5">Important Tips</h1>
       <section class="about" id="about">
       <p class="about-stepText">
       少額投資非課税制度
@@ -143,7 +151,7 @@ INDEX-FUNDS | INTRODUCTION
         そして、NISAで得た利益は非課税なので、全ての利益を得ることができます。
       </p>
       </section>
-    </header>
+    </body>
     <!-- Footer -->
   <footer class="py-5 bg-black">
     <div class="container">
@@ -151,5 +159,5 @@ INDEX-FUNDS | INTRODUCTION
     </div>
     <!-- /.container -->
   </footer>
-  </body>
+  
 </html>

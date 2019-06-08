@@ -1,16 +1,39 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <% content_for :title do %>
+INDEX-FUNDS | RE RESISTER
+<% end %>
+<link rel="stylesheet" href="normalize.css">  
+<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto Sans JP:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="javascript:history.back()">community of index investers</a>
+    </div>
+  </nav>
+  <body>
+<div class="header-login">
 <h2>Forgot your password?</h2>
-
+</div>
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :emailアドレス %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
+  <div class="actions-relogin">
+    <%= f.submit "パスワードを確認する" %>
   </div>
-<% end %>
-
+  <div class="field">
 <%= render "devise/shared/links" %>
+</div>
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Copyright &copy; Masato Okawa 2019</p>
+    </div>
+<% end %>

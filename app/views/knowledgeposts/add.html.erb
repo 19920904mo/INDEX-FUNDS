@@ -1,0 +1,36 @@
+<h1>Knowledgeposts#add</h1>
+<p>Find me in app/views/knowledgeposts/add.html.erb</p>
+<% if @knowledgepost.errors.any? %>
+<ul>
+    <% @knowledgepost.errors.full_messages.each do |err| %>
+      <li><%= err %></li>
+    <% end %>
+</ul>
+<% end %>
+<table>
+  <%= form_for(@knowledgepost, url:{controller:'knowledgeposts', action:'add' }) do |form| %>
+  <th><th>Title</th>
+      <td><%= form.text_field :title %></td></tr>
+  <th><th>Subtitle</th>
+      <td><td><%= form.text_field :read %></td></tr>
+  <tr><th>Content</th>
+      <td><td><%= form.text_area :content,{cols:40,rows:10} %></td></tr>
+  <tr><th>Genre ID</th>
+      <td><td><%= form.text_field :knowledgegenre_id %></td></tr>
+  <tr><th></th>
+      <td><%= form.submit "送信" %></td></tr>
+  <% end %>
+</table>
+<hr>
+<p>※ジャンルの一覧</p>
+<table>
+    <tr>
+      <th>Id</th><th >Genre</th>
+    </tr>
+    <% @genres.each do |obj| %>
+    <tr>
+      <td><%= obj.id %></td>
+      <td><%= obj.name %></td>
+    </tr>
+    <% end %>
+</table>

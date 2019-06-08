@@ -1,0 +1,9 @@
+<h3 class="show_title"><%= @knowledgepost.title %></h3>
+<p class="show_read"><%= @knowledgepost.read + ' [' + @knowledgepost.knowledgegenre.name + ']' %></p>
+<% contents = @knowledgepost.content.split "/n" %>
+<div class="show_content">
+  <% contents.each do |paragraph| %>
+  <p><%= paragraph %></p>
+<% end %>
+</div>
+<p class="show_created">(<%= @knowledgepost.created_at %>)</p>

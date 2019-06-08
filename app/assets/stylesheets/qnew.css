@@ -1,0 +1,53 @@
+
+.header{
+height: 100vh;
+text-align: center;
+margin: 55px 10px 10px 10px;
+}
+
+.center {
+    display: inline-block;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    border-bottom: double 4px #999;
+}
+
+.btn_area  {
+    text-align: center;
+    margin: 15px 10px 0px 10px;
+}
+
+.contact {
+  text-align: center;
+  height: 86vh;
+  padding: 120px 0 150px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.contents_row  {
+    text-align: center;
+    margin: 140px 10px 320px 10px;
+}
+
+.back_btn  {
+  text-align: center;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #C0C0C0;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #808080;
+  border-radius: 3px;
+}
+
+.back_btn:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+a:hover {
+    color: white;
+}

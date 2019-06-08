@@ -1,0 +1,19 @@
+<h1>Knowledgegenres#edit</h1>
+<p>Find me in app/views/knowledgegenres/edit.html.erb</p>
+<% if @knowledgegenre.errors.any? %>
+<ul>
+    <% if @knowledgegenre.errors.full_messages.each do |err| %>
+      <li><%= err %></li>
+    <% end %>
+</ul>
+<% end %>
+<table>
+  <%= form_for(@knowledgegenre, url:{controller:'knowledgegenres', action:'edit' }) do |form| %>
+  <th><th>Title</th>
+      <td><%= form.text_field :name %></td></tr>
+  <th><th>Subtitle</th>
+      <td><td><%= form.text_field :memo %></td></tr>
+  <tr><th></th>
+      <td><%= form.submit "送信" %></td></tr>
+  <% end %>
+</table>

@@ -1,0 +1,16 @@
+<h1>Knowledgeposts#delete</h1>
+<p>Find me in app/views/knowledgeposts/delete.html.erb</p>
+<table>
+  <tr><th>Id</th>
+    <td><%= @knowledgepost.id %></td></tr>
+  <tr><th>title</th>
+    <td><%= @knowledgepost.title %></td></tr>
+  <tr><th>read</th>
+    <td><%= @knowledgepost.read %></td></tr>
+  <tr><th>content</th>
+    <td><%= @knowledgepost.content %></td></tr>
+</table>
+<% form_tag controller: "knowledgeposts", action: "delete" do %>
+  <%= hidden_field_tag "id", {value: @knowledgepost.id} %>
+  <%= submit_tag "送信" %>
+<% end %>
